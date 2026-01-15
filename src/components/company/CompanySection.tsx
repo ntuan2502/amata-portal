@@ -32,8 +32,8 @@ ${t('company.address')}: ${language === 'vi' ? company.taxAddress.vi : company.t
             <h2 className="text-2xl font-bold text-center mb-8 text-foreground/80">{t('company.title')}</h2>
 
             <Tabs defaultValue={companyKeys[0]} className="w-full">
-                <div className="flex justify-center mb-8">
-                    <TabsList className="bg-muted/50 p-1 h-auto flex-wrap justify-center">
+                <div className="flex justify-center mb-8 w-full">
+                    <TabsList className="bg-muted/50 p-1 h-auto w-full md:w-auto flex justify-start md:justify-center overflow-x-auto no-scrollbar scroll-smooth">
                         {companyKeys.map((key) => (
                             <TabsTrigger
                                 key={key}

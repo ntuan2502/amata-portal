@@ -30,7 +30,7 @@ export const ACLT: CompanyInfo = {
         vi: "Khu Công Nghiệp Công Nghệ Cao Long Thành, Xã Long Thành, Tỉnh Đồng Nai, Việt Nam",
         en: "Long Thanh High-Tech Industrial Park, Long Thanh Commune, Dong Nai Province, Vietnam"
     },
-    intlName: "AMATA CITY LONG THANH JOINT STOCK COMPANY",
+    intlName: "AMATA CITY LONGTHANH JOINT STOCK COMPANY",
     shortName: "ACLT",
 };
 
@@ -42,7 +42,7 @@ export const ACHL: CompanyInfo = {
         vi: "Khu Công nghiệp Sông Khoai, Phường Hiệp Hòa, Tỉnh Quảng Ninh, Việt Nam",
         en: "Song Khoai Industrial Park, Hiep Hoa Ward, Quang Ninh Province, Vietnam"
     },
-    intlName: "AMATA CITY HALONG JOINT STOCK COMPANY",
+    intlName: "AMATA CITY HA LONG JOINT STOCK COMPANY",
     shortName: "ACHL",
 };
 

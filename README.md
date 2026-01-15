@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cổng Thông tin AMATA (AMATA Portal)
 
-## Getting Started
+Chào mừng bạn đến với **AMATA Portal** - Trang tổng hợp ứng dụng và thông tin nội bộ của Tập đoàn AMATA. Dự án này cung cấp một giao diện hiện đại, tập trung để truy cập nhanh các công cụ làm việc và tra cứu thông tin các công ty thành viên.
 
-First, run the development server:
+## 🚀 Tính năng nổi bật
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. Danh sách Ứng dụng (Application Showcase)
+- **Giao diện lưới (Grid Layout)**: Hiển thị danh sách ứng dụng trực quan với thumbnail và icon đại diện.
+- **Tìm kiếm & Lọc**: Tìm kiếm ứng dụng theo tên hoặc mô tả. Bộ lọc theo danh mục (Admin, HR, IT Services, Management, v.v.).
+- **Hiệu ứng mượt mà**: Sử dụng `Framer Motion` cho các hiệu ứng chuyển cảnh và hover tương tác.
+- **Tiêu đề song ngữ**: Hỗ trợ hiển thị tiêu đề "Ứng dụng nội bộ" / "Internal Applications" theo ngôn ngữ chọn.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Thông tin Công ty (Company Information)
+- **Hồ sơ chi tiết**: Hiển thị thông tin của 4 công ty thành viên chính:
+    - **ACBH**: AMATA CITY BIENHOA
+    - **ACLT**: AMATA CITY LONGTHANH
+    - **ACHL**: AMATA CITY HA LONG
+    - **ATLT**: AMATA TOWNSHIP LONG THANH
+    - **ACPT**: AMATA CITY PHU THO
+- **Giao diện Tab**: Chuyển đổi nhanh giữa các công ty với giao diện Tab hiện đại, hỗ trợ vuốt ngang trên mobile.
+- **Đa ngôn ngữ**: Tự động chuyển đổi Tên công ty, Địa chỉ và các nhãn (Mã số thuế) giữa Tiếng Việt và Tiếng Anh.
+- **Sao chép nhanh**: Tích hợp nút **Copy** tiện lợi, cho phép sao chép toàn bộ thông tin công ty vào clipboard với định dạng chuẩn.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Trải nghiệm người dùng (UX/UI)
+- **Đa ngôn ngữ (i18n)**: Chuyển đổi tức thì giữa Tiếng Việt (VI) và Tiếng Anh (EN). Trạng thái ngôn ngữ được lưu trữ tự động.
+- **Chế độ Tối (Dark Mode)**: Hỗ trợ giao diện sáng/tối hoàn chỉnh, tối ưu độ tương phản cho mọi thành phần.
+- **Responsive**: Tương thích hoàn hảo trên mọi thiết bị từ Desktop, Tablet đến Mobile.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Công nghệ sử dụng
 
-## Learn More
+Dự án được xây dựng trên các công nghệ web hiện đại nhất:
 
-To learn more about Next.js, take a look at the following resources:
+- **Core**: [Next.js 15+](https://nextjs.org/) (App Router), [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/).
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) cho utility-first styling.
+- **UI Components**: [ShadCN UI](https://ui.shadcn.com/) (xây dựng trên Radix UI) cho các component chất lượng cao.
+- **Icons**: [Lucide React](https://lucide.dev/).
+- **Animations**: [Framer Motion](https://www.framer.com/motion/).
+- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/) cho quản lý trạng thái ngôn ngữ toàn cục.
+- **Runtime**: [Bun](https://bun.sh/) (hoặc Node.js).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Cài đặt và Chạy dự án
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1.  **Cài đặt dependencies**:
+    ```bash
+    bun install
+    # hoặc
+    npm install
+    ```
 
-## Deploy on Vercel
+2.  **Chạy môi trường phát triển (Development)**:
+    ```bash
+    bun dev
+    # hoặc
+    npm run dev
+    ```
+    Truy cập [http://localhost:3000](http://localhost:3000) để xem kết quả.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3.  **Build cho Production**:
+    ```bash
+    bun run build
+    bun run start
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Cấu trúc dự án
+
+- `src/app`: Chứa các page và layout chính (Next.js App Router).
+- `src/components`: Các UI component tái sử dụng (Button, Card, Tabs...).
+- `src/features`: Các feature lớn của ứng dụng (Showcase, Company Info...).
+- `src/store`: Quản lý state (useLanguageStore).
+- `src/constants`: Chứa dữ liệu tĩnh (danh sách công ty, thông tin ứng dụng).
+- `src/services`: Các hàm xử lý logic/API giả lập.
+
+## © Bản quyền
+
+© 2026 - Hiện tại **Tập đoàn AMATA**. Tất cả các quyền được bảo lưu.

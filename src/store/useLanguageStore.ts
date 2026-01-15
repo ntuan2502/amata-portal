@@ -14,7 +14,7 @@ interface LanguageState {
 const translations = {
     vi: {
         'search.placeholder': 'Tìm kiếm ứng dụng...',
-        'footer.copyright': '© 2024 Tập đoàn AMATA. Đã đăng ký bản quyền.',
+        'footer.copyright': 'Tập đoàn AMATA. Đã đăng ký bản quyền.',
         'apps.all': 'Tất cả',
         'category.Admin': 'Hành chính',
         'category.HR': 'Nhân sự',
@@ -27,11 +27,12 @@ const translations = {
         'company.tax_code': 'Mã số thuế',
         'company.address': 'Địa chỉ thuế',
         'company.copy': 'Sao chép thông tin',
-        'company.copied': 'Đã sao chép'
+        'company.copied': 'Đã sao chép',
+        'apps.title': 'Ứng dụng nội bộ'
     },
     en: {
         'search.placeholder': 'Search applications...',
-        'footer.copyright': '© 2024 AMATA Group. All rights reserved.',
+        'footer.copyright': 'AMATA Group. All rights reserved.',
         'apps.all': 'All',
         'category.Admin': 'Admin',
         'category.HR': 'HR',
@@ -44,7 +45,8 @@ const translations = {
         'company.tax_code': 'Tax Code',
         'company.address': 'Tax Address',
         'company.copy': 'Copy Info',
-        'company.copied': 'Copied'
+        'company.copied': 'Copied',
+        'apps.title': 'Internal Applications'
     }
 };
 

@@ -49,6 +49,8 @@ export const AppGrid = ({ apps }: Props) => {
 
     return (
         <div className="space-y-4">
+            <h2 className="text-2xl font-bold text-center mb-4 text-foreground/80 pt-4">{t('apps.title')}</h2>
+
             <div className="flex flex-col md:flex-row gap-4 items-center justify-between sticky top-0 z-10 bg-background/95 backdrop-blur-md py-2 border-b border-border/40 md:static md:bg-transparent md:border-0 md:py-0 dark:border-white/20">
                 <Tabs defaultValue="All" value={activeTab} onValueChange={setActiveTab} className="w-full md:w-auto max-w-full">
                     <TabsList className="h-10 bg-muted/50 p-1 w-full md:w-auto flex justify-start md:justify-center overflow-x-auto no-scrollbar scroll-smooth">
@@ -77,7 +79,7 @@ export const AppGrid = ({ apps }: Props) => {
 
             <motion.div
                 layout
-                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 pb-20"
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 pb-10"
             >
                 <AnimatePresence mode="popLayout">
                     {filteredApps.map(app => (
