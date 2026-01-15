@@ -22,7 +22,12 @@ const translations = {
         'category.Management': 'Quản lý',
         'category.General': 'Chung',
         'app.visit': 'Truy cập',
-        header_title: "Cổng thông tin AMATA"
+        header_title: "Cổng thông tin AMATA",
+        'company.title': 'Thông tin Công ty',
+        'company.tax_code': 'Mã số thuế',
+        'company.address': 'Địa chỉ thuế',
+        'company.copy': 'Sao chép thông tin',
+        'company.copied': 'Đã sao chép'
     },
     en: {
         'search.placeholder': 'Search applications...',
@@ -34,7 +39,12 @@ const translations = {
         'category.Management': 'Management',
         'category.General': 'General',
         'app.visit': 'Open App',
-        header_title: "AMATA Portal"
+        header_title: "AMATA Portal",
+        'company.title': 'Company Information',
+        'company.tax_code': 'Tax Code',
+        'company.address': 'Tax Address',
+        'company.copy': 'Copy Info',
+        'company.copied': 'Copied'
     }
 };
 

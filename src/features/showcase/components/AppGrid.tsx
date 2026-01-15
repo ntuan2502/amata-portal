@@ -58,7 +58,7 @@ export const AppGrid = ({ apps }: Props) => {
                             <TabsTrigger
                                 key={cat}
                                 value={cat}
-                                className="rounded-full text-sm px-5 py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary transition-all duration-300 whitespace-nowrap shrink-0 font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 cursor-pointer"
+                                className="rounded-full text-sm px-5 py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary dark:hover:text-primary transition-all duration-300 whitespace-nowrap shrink-0 font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 cursor-pointer"
                             >
                                 {getCategoryLabel(cat)}
                             </TabsTrigger>

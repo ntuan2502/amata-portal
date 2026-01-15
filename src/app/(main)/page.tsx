@@ -1,4 +1,5 @@
 import { AppGrid } from '@/features/showcase/components/AppGrid';
+import { CompanySection } from '@/components/company/CompanySection';
 import { getApps } from '@/services/appService';
 
 export default async function DashboardPage() {
@@ -14,6 +15,8 @@ export default async function DashboardPage() {
                 <div className="absolute top-40 -left-20 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl -z-10 pointer-events-none" />
 
                 <AppGrid apps={apps} />
+
+                <CompanySection />
             </div>
         </div>
     );
