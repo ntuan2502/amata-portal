@@ -58,4 +58,16 @@ export const ATLT: CompanyInfo = {
     shortName: "ATLT",
 };
 
-export const COMPANIES = { ACBH, ACLT, ACHL, ATLT };
+export const ACPT: CompanyInfo = {
+    fullName: "CÔNG TY CỔ PHẦN ĐÔ THỊ AMATA PHÚ THỌ",
+    logo: "/images/logo/acpt.png",
+    taxCode: "2601144546",
+    taxAddress: {
+        vi: "Khu Công nghiệp Đoan Hùng, Xã Đoan Hùng, Tỉnh Phú Thọ, Việt Nam",
+        en: "Doan Hung Industrial Park, Doan Hung Commune, Phu Tho Province, Vietnam"
+    },
+    intlName: "AMATA CITY PHU THO JOINT STOCK COMPANY",
+    shortName: "ACPT",
+};
+
+export const COMPANIES = { ACBH, ACLT, ACHL, ATLT, ACPT };

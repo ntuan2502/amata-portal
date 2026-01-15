@@ -18,8 +18,6 @@ export const AppGrid = ({ apps }: Props) => {
     const [searchTerm, setSearchTerm] = useState('');
     const [activeTab, setActiveTab] = useState<string>('All');
 
-
-
     // Extract unique categories and translate them for display if needed, 
     // but for filtering logic we keep keys. 
     // Actually, 'categories' array is used for rendering tabs.
