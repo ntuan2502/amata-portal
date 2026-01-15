@@ -53,14 +53,21 @@ export const AppGrid = ({ apps }: Props) => {
 
             <div className="flex flex-col md:flex-row gap-4 items-center justify-between sticky top-0 z-10 bg-background/95 backdrop-blur-md py-2 border-b border-border/40 md:static md:bg-transparent md:border-0 md:py-0 dark:border-white/20">
                 <Tabs defaultValue="All" value={activeTab} onValueChange={setActiveTab} className="w-full md:w-auto max-w-full">
-                    <TabsList className="h-10 bg-muted/50 p-1 w-full md:w-auto flex justify-start md:justify-center overflow-x-auto no-scrollbar scroll-smooth">
+                    <TabsList className="h-auto bg-muted/30 p-1.5 w-full md:w-auto flex justify-start md:justify-center overflow-x-auto no-scrollbar scroll-smooth gap-1 rounded-full border border-border/40 backdrop-blur-sm">
                         {categories.map(cat => (
                             <TabsTrigger
                                 key={cat}
                                 value={cat}
-                                className="rounded-full text-sm px-5 py-2 data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-md hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary dark:hover:text-primary transition-all duration-300 whitespace-nowrap shrink-0 font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 cursor-pointer"
+                                className="relative rounded-full text-sm px-5 py-2 transition-all duration-300 cursor-pointer font-medium hover:text-primary hover:bg-muted dark:hover:bg-muted/50 data-[state=active]:text-primary-foreground data-[state=active]:shadow-none bg-transparent"
                             >
-                                {getCategoryLabel(cat)}
+                                {activeTab === cat && (
+                                    <motion.div
+                                        layoutId="activeTabApp"
+                                        className="absolute inset-0 bg-primary rounded-full shadow-md z-0"
+                                        transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                                    />
+                                )}
+                                <span className="relative z-10">{getCategoryLabel(cat)}</span>
                             </TabsTrigger>
                         ))}
                     </TabsList>

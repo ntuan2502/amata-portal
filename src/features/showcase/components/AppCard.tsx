@@ -18,7 +18,7 @@ interface Props {
 export const AppCard = ({ app }: Props) => {
     const { language, t } = useLanguageStore();
     // Lấy icon component từ thư viện Lucide dựa trên tên string
-    // @ts-ignore
+    // @ts-expect-error: Dynamic icon access from library string
     const IconComponent = LucideIcons[app.iconUrl] || LucideIcons.AppWindow;
 
     const description = typeof app.description === 'string'
@@ -31,7 +31,7 @@ export const AppCard = ({ app }: Props) => {
             transition={{ type: 'spring', stiffness: 300 }}
             className="h-full"
         >
-            <Card className="h-full flex flex-col p-0 gap-0 hover:shadow-xl border-muted/50 transition-all duration-300 dark:bg-card/40 dark:hover:bg-card/80 backdrop-blur-sm overflow-hidden group dark:border-white/20">
+            <Card className="h-full flex flex-col p-0 gap-0 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50 border-muted/40 transition-all duration-500 dark:bg-card/30 dark:hover:bg-card/60 backdrop-blur-md overflow-hidden group dark:border-white/10">
                 <div className="relative h-44 w-full bg-muted/50 overflow-hidden">
                     {app.thumbnailUrl ? (
                         // eslint-disable-next-line @next/next/no-img-element

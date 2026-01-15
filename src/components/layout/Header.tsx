@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export const Header = () => {
-    const { language, setLanguage, t, _hasHydrated } = useLanguageStore();
+    const { language, setLanguage, _hasHydrated } = useLanguageStore();
     const { setTheme, theme } = useTheme();
 
     if (!_hasHydrated) {
@@ -20,7 +20,7 @@ export const Header = () => {
     }
 
     return (
-        <header className="h-16 border-b border-border shadow-sm bg-background sticky top-0 z-50 w-full transition-all dark:border-white/20">
+        <header className="h-16 border-b border-white/10 shadow-sm bg-background/60 backdrop-blur-xl sticky top-0 z-50 w-full transition-all support-[backdrop-filter]:bg-background/60 dark:border-white/10 dark:bg-black/30">
             <div className="h-full max-w-7xl mx-auto flex items-center justify-between px-6 md:px-8">
                 <div className="flex items-center gap-3">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
