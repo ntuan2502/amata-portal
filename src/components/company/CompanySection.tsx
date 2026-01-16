@@ -100,12 +100,12 @@ ${t('company.address')}: ${language === 'vi' ? company.taxAddress.vi : company.t
                                         </div>
 
                                         <div className="p-8 space-y-6">
-                                            <div>
-                                                <h3 className="text-xl md:text-2xl font-bold text-primary mb-2 pr-20">
+                                            <div className="text-center md:text-left">
+                                                <h3 className="text-xl md:text-2xl font-bold text-primary mb-2 md:pr-20">
                                                     {language === 'vi' ? company.fullName : company.intlName}
                                                 </h3>
-                                                <p className="text-sm md:text-base text-muted-foreground font-medium flex items-center gap-2">
-                                                    <Globe className="w-4 h-4 shrink-0" />
+                                                <p className="text-sm md:text-base text-muted-foreground font-medium flex items-start justify-center md:justify-start gap-2">
+                                                    <Globe className="w-4 h-4 shrink-0 mt-0.5 md:mt-1" />
                                                     {language === 'vi' ? company.intlName : company.fullName}
                                                 </p>
                                             </div>

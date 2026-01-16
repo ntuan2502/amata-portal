@@ -1,5 +1,6 @@
 ---
-description: Plan and implement UI
+name: ui-ux-pro-max
+description: "UI/UX design intelligence. 50 styles, 21 palettes, 50 font pairings, 20 charts, 9 stacks (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui). Actions: plan, build, create, design, implement, review, fix, improve, optimize, enhance, refactor, check UI/UX code. Projects: website, landing page, dashboard, admin panel, e-commerce, SaaS, portfolio, blog, mobile app, .html, .tsx, .vue, .svelte. Elements: button, modal, navbar, sidebar, card, table, form, chart. Styles: glassmorphism, claymorphism, minimalism, brutalism, neumorphism, bento grid, dark mode, responsive, skeuomorphism, flat design. Topics: color palette, accessibility, animation, layout, typography, font pairing, spacing, hover, shadow, gradient."
 ---
 
 # UI/UX Pro Max - Design Intelligence
@@ -14,26 +15,11 @@ Check if Python is installed:
 python3 --version || python --version
 ```
 
-If Python is not installed, install it based on user's OS:
-
-**macOS:**
-```bash
-brew install python3
-```
-
-**Ubuntu/Debian:**
-```bash
-sudo apt update && sudo apt install python3
-```
-
-**Windows:**
-```powershell
-winget install Python.Python.3.12
-```
+If Python is not installed, instruct the user to install it based on their OS.
 
 ---
 
-## How to Use This Workflow
+## How to Use This Skill
 
 When user requests UI/UX work (design, build, create, implement, review, fix, improve), follow this workflow:
 
@@ -47,10 +33,12 @@ Extract key information from user request:
 
 ### Step 2: Search Relevant Domains
 
-Use `search.py` multiple times to gather comprehensive information. Search until you have enough context.
+Use `run_shell_command` to execute the `search.py` script multiple times to gather comprehensive information. Search until you have enough context.
+
+**Command Format:**
 
 ```bash
-python3 .shared/ui-ux-pro-max/scripts/search.py "<keyword>" --domain <domain> [-n <max_results>]
+python3 .shared/ui-ux-pro-max/scripts/search.py "<keyword>" --domain <domain>
 ```
 
 **Recommended search order:**
@@ -113,29 +101,41 @@ Available stacks: `html-tailwind`, `react`, `nextjs`, `vue`, `svelte`, `swiftui`
 
 **AI should:**
 
-```bash
-# 1. Search product type
-python3 .shared/ui-ux-pro-max/scripts/search.py "beauty spa wellness service" --domain product
+1.  Search product type:
+    ```bash
+    python3 .shared/ui-ux-pro-max/scripts/search.py "beauty spa wellness service" --domain product
+    ```
 
-# 2. Search style (based on industry: beauty, elegant)
-python3 .shared/ui-ux-pro-max/scripts/search.py "elegant minimal soft" --domain style
+2.  Search style (based on industry: beauty, elegant):
+    ```bash
+    python3 .shared/ui-ux-pro-max/scripts/search.py "elegant minimal soft" --domain style
+    ```
 
-# 3. Search typography
-python3 .shared/ui-ux-pro-max/scripts/search.py "elegant luxury" --domain typography
+3.  Search typography:
+    ```bash
+    python3 .shared/ui-ux-pro-max/scripts/search.py "elegant luxury" --domain typography
+    ```
 
-# 4. Search color palette
-python3 .shared/ui-ux-pro-max/scripts/search.py "beauty spa wellness" --domain color
+4.  Search color palette:
+    ```bash
+    python3 .shared/ui-ux-pro-max/scripts/search.py "beauty spa wellness" --domain color
+    ```
 
-# 5. Search landing page structure
-python3 .shared/ui-ux-pro-max/scripts/search.py "hero-centric social-proof" --domain landing
+5.  Search landing page structure:
+    ```bash
+    python3 .shared/ui-ux-pro-max/scripts/search.py "hero-centric social-proof" --domain landing
+    ```
 
-# 6. Search UX guidelines
-python3 .shared/ui-ux-pro-max/scripts/search.py "animation" --domain ux
-python3 .shared/ui-ux-pro-max/scripts/search.py "accessibility" --domain ux
+6.  Search UX guidelines:
+    ```bash
+    python3 .shared/ui-ux-pro-max/scripts/search.py "animation" --domain ux
+    python3 .shared/ui-ux-pro-max/scripts/search.py "accessibility" --domain ux
+    ```
 
-# 7. Search stack guidelines (default: html-tailwind)
-python3 .shared/ui-ux-pro-max/scripts/search.py "layout responsive" --stack html-tailwind
-```
+7.  Search stack guidelines (default: html-tailwind):
+    ```bash
+    python3 .shared/ui-ux-pro-max/scripts/search.py "layout responsive" --stack html-tailwind
+    ```
 
 **Then:** Synthesize all search results and implement the design.
 
@@ -149,10 +149,6 @@ python3 .shared/ui-ux-pro-max/scripts/search.py "layout responsive" --stack html
 4. **Always check UX** - Search "animation", "z-index", "accessibility" for common issues
 5. **Use stack flag** - Get implementation-specific best practices
 6. **Iterate** - If first search doesn't match, try different keywords
-7. **Split Into Multiple Files** - For better maintainability:
-   - Separate components into individual files (e.g., `Header.tsx`, `Footer.tsx`)
-   - Extract reusable styles into dedicated files
-   - Keep each file focused and under 200-300 lines
 
 ---
 
@@ -202,9 +198,10 @@ Before delivering UI code, verify these items:
 
 ### Visual Quality
 - [ ] No emojis used as icons (use SVG instead)
-- [ ] All icons from consistent icon set (Heroicons/Lucide)
+- [ ] All icons from consistent icon set (Heroicons, Lucide, Simple Icons)
 - [ ] Brand logos are correct (verified from Simple Icons)
 - [ ] Hover states don't cause layout shift
+- [ ] Use theme colors directly (bg-primary) not var() wrapper
 
 ### Interaction
 - [ ] All clickable elements have `cursor-pointer`
