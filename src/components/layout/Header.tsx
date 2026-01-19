@@ -28,9 +28,10 @@ export const Header = () => {
                     <Image
                         src="/images/logo/amata-logo.png"
                         alt="AMATA Portal"
-                        width={180}
-                        height={56}
-                        className="h-14 w-auto object-contain"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        className="h-10 w-auto object-contain"
                         priority
                     />
                 </div>
