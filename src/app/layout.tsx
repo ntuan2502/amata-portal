@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { MetadataUpdater } from "@/components/layout/MetadataUpdater";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,8 +17,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AMATA Portal",
-  description: "Enterprise Application Portal for AMATA Group",
+  title: "Cổng thông tin AMATA",
+  description: "Cổng thông tin ứng dụng doanh nghiệp cho Tập đoàn AMATA",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -37,6 +41,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <TooltipProvider>
+            <MetadataUpdater />
             {children}
             <ScrollToTop />
           </TooltipProvider>

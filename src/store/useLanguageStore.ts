@@ -28,7 +28,9 @@ const translations = {
         'company.address': 'Địa chỉ thuế',
         'company.copy': 'Sao chép thông tin',
         'company.copied': 'Đã sao chép',
-        'apps.title': 'Ứng dụng nội bộ'
+        'apps.title': 'Ứng dụng nội bộ',
+        'metadata.title': 'Cổng thông tin AMATA',
+        'metadata.description': 'Cổng thông tin ứng dụng doanh nghiệp cho Tập đoàn AMATA'
     },
     en: {
         'search.placeholder': 'Search applications...',
@@ -46,7 +48,9 @@ const translations = {
         'company.address': 'Tax Address',
         'company.copy': 'Copy Info',
         'company.copied': 'Copied',
-        'apps.title': 'Internal Applications'
+        'apps.title': 'Internal Applications',
+        'metadata.title': 'AMATA Portal',
+        'metadata.description': 'Enterprise Application Portal for AMATA Group'
     }
 };
 
