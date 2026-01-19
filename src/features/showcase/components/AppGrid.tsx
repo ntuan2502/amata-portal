@@ -45,7 +45,7 @@ export const AppGrid = ({ apps }: Props) => {
         return t(`category.${cat}`);
     };
 
-    if (!_hasHydrated) return null;
+
 
     return (
         <div className="space-y-4">

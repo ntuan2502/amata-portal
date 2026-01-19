@@ -25,7 +25,7 @@ export const Header = () => {
                 <div className="flex items-center gap-3">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        src="/images/amata-logo.png"
+                        src="/images/logo/amata-logo.png"
                         alt="AMATA Portal"
                         className="h-14 w-auto object-contain"
                     />
