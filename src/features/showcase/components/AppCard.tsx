@@ -4,6 +4,11 @@ import { AppEntity } from '@/types';
 import { Card, CardHeader, CardContent, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { ExternalLink } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -75,9 +80,16 @@ export const AppCard = ({ app }: Props) => {
                     </div>
                 </CardHeader>
                 <CardContent className="flex-1 pt-2 px-5 pb-3">
-                    <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
-                        {description}
-                    </p>
+                    <Tooltip>
+                        <TooltipTrigger asChild>
+                            <p className="text-sm text-muted-foreground line-clamp-none md:line-clamp-2 leading-relaxed cursor-help touch-manipulation">
+                                {description}
+                            </p>
+                        </TooltipTrigger>
+                        <TooltipContent className="max-w-[280px] bg-primary text-primary-foreground shadow-md dark:bg-white dark:text-black" side="top">
+                            {description}
+                        </TooltipContent>
+                    </Tooltip>
                 </CardContent>
                 <CardFooter className="pt-0 pb-5 px-5">
                     <Button variant="outline" className="w-full h-9 group/btn hover:border-primary/50 hover:bg-primary/5 dark:hover:bg-primary/10 cursor-pointer" asChild>
