@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { ExternalLink } from 'lucide-react';
 import * as LucideIcons from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 
 import { useLanguageStore } from '@/store/useLanguageStore';
@@ -27,18 +28,24 @@ export const AppCard = ({ app }: Props) => {
 
     return (
         <motion.div
-            whileHover={{ y: -5 }}
-            transition={{ type: 'spring', stiffness: 300 }}
+            initial={{ opacity: 0, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
+            whileHover={{
+                y: -5,
+                transition: { type: 'spring', stiffness: 300 }
+            }}
             className="h-full"
         >
             <Card className="h-full flex flex-col p-0 gap-0 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50 border-muted/40 transition-all duration-500 dark:bg-card/30 dark:hover:bg-card/60 backdrop-blur-md overflow-hidden group dark:border-white/10">
                 <div className="relative h-44 w-full bg-muted/50 overflow-hidden">
                     {app.thumbnailUrl ? (
-                        // eslint-disable-next-line @next/next/no-img-element
-                        <img
+                        <Image
                             src={app.thumbnailUrl}
-                            alt={app.name}
-                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                            alt={`${app.name} Thumbnail`}
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-110"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         />
                     ) : (
                         <div className="w-full h-full flex items-center justify-center bg-primary/5">

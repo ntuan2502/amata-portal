@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { Moon, Sun, Languages } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Button } from '@/components/ui/button';
@@ -23,11 +24,14 @@ export const Header = () => {
         <header className="h-16 border-b border-white/10 shadow-sm bg-background/60 backdrop-blur-xl sticky top-0 z-50 w-full transition-all support-[backdrop-filter]:bg-background/60 dark:border-white/10 dark:bg-black/30">
             <div className="h-full max-w-7xl mx-auto flex items-center justify-between px-6 md:px-8">
                 <div className="flex items-center gap-3">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+
+                    <Image
                         src="/images/logo/amata-logo.png"
                         alt="AMATA Portal"
+                        width={180}
+                        height={56}
                         className="h-14 w-auto object-contain"
+                        priority
                     />
                 </div>
 

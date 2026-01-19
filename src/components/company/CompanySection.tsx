@@ -8,6 +8,7 @@ import { COMPANIES } from '@/constants/company';
 import { useLanguageStore } from '@/store/useLanguageStore';
 import { MapPin, FileText, Globe, Copy, Check } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export const CompanySection = () => {
     const { language, t } = useLanguageStore();
@@ -30,7 +31,7 @@ ${t('company.address')}: ${language === 'vi' ? company.taxAddress.vi : company.t
     };
 
     return (
-        <div className="w-full mt-12 mb-20 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
+        <div className="w-full mt-12 mb-20">
             <h2 className="text-2xl font-bold text-center mb-8 text-foreground/80">{t('company.title')}</h2>
 
             <Tabs defaultValue={companyKeys[0]} value={activeTab} onValueChange={setActiveTab} className="w-full">
@@ -85,12 +86,13 @@ ${t('company.address')}: ${language === 'vi' ? company.taxAddress.vi : company.t
                                     <div className="grid md:grid-cols-[1fr_2fr] gap-0">
                                         <div className="bg-muted/30 p-8 flex items-center justify-center border-b md:border-b-0 md:border-r border-border/50">
                                             <div className="text-center space-y-4 w-full">
-                                                <div className="w-48 h-48 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm p-4 overflow-hidden border-2 border-border/60 dark:border-white/30">
-                                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                                    <img
+                                                <div className="w-48 h-48 mx-auto bg-white rounded-full flex items-center justify-center shadow-sm overflow-hidden border-2 border-border/60 dark:border-white/30 relative">
+
+                                                    <Image
                                                         src={company.logo}
                                                         alt={`${company.shortName} Logo`}
-                                                        className="w-full h-full object-contain"
+                                                        fill
+                                                        className="object-contain p-4"
                                                     />
                                                 </div>
                                                 <div className="text-sm font-medium text-muted-foreground bg-background/80 px-3 py-1 rounded-full inline-block border border-border/50 dark:border-white/20">
