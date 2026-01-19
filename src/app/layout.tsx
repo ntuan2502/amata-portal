@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { ScrollToTop } from "@/components/layout/ScrollToTop";
@@ -45,9 +46,10 @@ export default function RootLayout({
             <MetadataUpdater />
             {children}
             <ScrollToTop />
-            <SpeedInsights />
           </TooltipProvider>
         </ThemeProvider>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
