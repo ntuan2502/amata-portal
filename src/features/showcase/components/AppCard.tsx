@@ -44,19 +44,21 @@ export const AppCard = ({ app }: Props) => {
         >
             <Card className="h-full flex flex-col p-0 gap-0 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50 border-muted/40 transition-all duration-500 dark:bg-card/30 dark:hover:bg-card/60 backdrop-blur-md overflow-hidden group dark:border-white/10">
                 <div className="relative h-44 w-full bg-muted/50 overflow-hidden">
-                    {app.thumbnailUrl ? (
-                        <Image
-                            src={app.thumbnailUrl}
-                            alt={`${app.name} Thumbnail`}
-                            fill
-                            className="object-cover transition-transform duration-500 group-hover:scale-110"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        />
-                    ) : (
-                        <div className="w-full h-full flex items-center justify-center bg-primary/5">
-                            <IconComponent size={40} className="text-primary/20" />
-                        </div>
-                    )}
+                    <a href={app.url} target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-pointer">
+                        {app.thumbnailUrl ? (
+                            <Image
+                                src={app.thumbnailUrl}
+                                alt={`${app.name} Thumbnail`}
+                                fill
+                                className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
+                        ) : (
+                            <div className="w-full h-full flex items-center justify-center bg-primary/5">
+                                <IconComponent size={40} className="text-primary/20" />
+                            </div>
+                        )}
+                    </a>
                 </div>
 
                 <CardHeader className="flex flex-row items-center gap-5 px-5 pt-5 pb-2">
