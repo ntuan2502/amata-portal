@@ -3,6 +3,19 @@ import { AppEntity } from '@/types';
 // MOCK_APPS updated based on user request with inferred metadata
 export const MOCK_APPS: AppEntity[] = [
     {
+        id: 'vn-intranet',
+        name: 'VN Intranet',
+        description: {
+            vi: 'Mạng nội bộ AMATA Việt Nam - Tin tức và thông báo quan trọng.',
+            en: 'AMATA Vietnam Intranet - News and important announcements.'
+        },
+        iconUrl: 'Globe',
+        thumbnailUrl: '/images/application/vn-intranet.jpg',
+        // thumbnailUrl: 'https://images.unsplash.com/photo-1504465039710-0f49c0a47eb7?auto=format&fit=crop&q=80&w=800',
+        url: 'https://vnintranet.amata.com/intranet/',
+        category: 'HR',
+    },
+    {
         id: 'car-booking',
         name: 'Car Booking',
         description: {
@@ -92,19 +105,6 @@ export const MOCK_APPS: AppEntity[] = [
         thumbnailUrl: '/images/application/online-approval.jpg',
         // thumbnailUrl: 'https://images.unsplash.com/photo-1763729805496-b5dbf7f00c79?ixlib=rb-4.1.0&q=80&w=800&auto=format&fit=crop',
         url: 'https://mis.amata.com/online_approval/',
-        category: 'Management',
-    },
-    {
-        id: 'vn-intranet',
-        name: 'VN Intranet',
-        description: {
-            vi: 'Mạng nội bộ AMATA Việt Nam - Tin tức và thông báo quan trọng.',
-            en: 'AMATA Vietnam Intranet - News and important announcements.'
-        },
-        iconUrl: 'Globe',
-        thumbnailUrl: '/images/application/vn-intranet.jpg',
-        // thumbnailUrl: 'https://images.unsplash.com/photo-1504465039710-0f49c0a47eb7?auto=format&fit=crop&q=80&w=800',
-        url: 'https://vnintranet.amata.com/intranet/',
         category: 'Management',
     }
 ];
