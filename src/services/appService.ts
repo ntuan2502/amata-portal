@@ -105,7 +105,7 @@ export const MOCK_APPS: AppEntity[] = [
         thumbnailUrl: '/images/application/online-approval.jpg',
         // thumbnailUrl: 'https://images.unsplash.com/photo-1763729805496-b5dbf7f00c79?ixlib=rb-4.1.0&q=80&w=800&auto=format&fit=crop',
         url: 'https://mis.amata.com/online_approval/',
-        category: 'Management',
+        category: 'IT Services',
     }
 ];
 
