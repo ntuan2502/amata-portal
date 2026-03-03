@@ -2,15 +2,13 @@
 
 import { useLanguageStore } from '@/store/useLanguageStore';
 import { Loader2 } from "lucide-react";
-import { useEffect, useState } from 'react';
+import { useSyncExternalStore } from 'react';
+
+const emptySubscribe = () => () => { };
 
 export const ClientLoader = ({ children }: { children: React.ReactNode }) => {
     const { _hasHydrated } = useLanguageStore();
-    const [mounted, setMounted] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
+    const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
 
     // Show loader if not mounted yet (SSR) or not hydrated
     if (!mounted || !_hasHydrated) {

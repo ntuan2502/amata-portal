@@ -14,7 +14,7 @@ interface Props {
 }
 
 export const AppGrid = ({ apps }: Props) => {
-    const { t, _hasHydrated } = useLanguageStore();
+    const { t } = useLanguageStore();
     const [searchTerm, setSearchTerm] = useState('');
     const [activeTab, setActiveTab] = useState<string>('All');
 
