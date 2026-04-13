@@ -26,12 +26,12 @@ export const Header = () => {
                 <div className="flex items-center gap-3">
 
                     <Image
-                        src="/images/logo/amata-logo.png"
+                        src="/images/logo/amata-allwin.png"
                         alt="AMATA Portal"
                         width={0}
                         height={0}
                         sizes="100vw"
-                        className="h-10 w-auto object-contain"
+                        className="h-16 w-auto object-contain"
                         priority
                     />
                 </div>
