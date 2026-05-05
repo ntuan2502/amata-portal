@@ -15,8 +15,8 @@ export const ACBH: CompanyInfo = {
     logo: "/images/logo/acbh.png",
     taxCode: "3600265395",
     taxAddress: {
-        vi: "KCN Long Bình (Amata), Phường Long Bình, Tỉnh Đồng Nai, Việt Nam",
-        en: "Long Binh Industrial Park (Amata), Long Binh Ward, Dong Nai Province, Vietnam"
+        vi: "KCN Long Bình (Amata), Phường Long Bình, TP Đồng Nai, Việt Nam",
+        en: "Long Binh Industrial Park (Amata), Long Binh Ward, Dong Nai City, Vietnam"
     },
     intlName: "AMATA CITY BIENHOA JOINT STOCK COMPANY",
     shortName: "ACBH",
@@ -27,8 +27,8 @@ export const ACLT: CompanyInfo = {
     logo: "/images/logo/aclt.png",
     taxCode: "3603295006",
     taxAddress: {
-        vi: "Khu Công Nghiệp Công Nghệ Cao Long Thành, Xã Long Thành, Tỉnh Đồng Nai, Việt Nam",
-        en: "Long Thanh High-Tech Industrial Park, Long Thanh Commune, Dong Nai Province, Vietnam"
+        vi: "Khu Công Nghiệp Công Nghệ Cao Long Thành, Xã Long Thành, TP Đồng Nai, Việt Nam",
+        en: "Long Thanh High-Tech Industrial Park, Long Thanh Commune, Dong Nai City, Vietnam"
     },
     intlName: "AMATA CITY LONGTHANH JOINT STOCK COMPANY",
     shortName: "ACLT",
@@ -51,8 +51,8 @@ export const ATLT: CompanyInfo = {
     logo: "/images/logo/atlt.png",
     taxCode: "3603404368",
     taxAddress: {
-        vi: "Trung tâm dịch vụ Amata, Khu thương mại Amata, Phường Long Bình, Tỉnh Đồng Nai, Việt Nam",
-        en: "Amata Service Center, Amata Commercial Complex, Long Binh Ward, Dong Nai Province, Vietnam"
+        vi: "Trung tâm dịch vụ Amata, Khu thương mại Amata, Phường Long Bình, TP Đồng Nai, Việt Nam",
+        en: "Amata Service Center, Amata Commercial Complex, Long Binh Ward, Dong Nai City, Vietnam"
     },
     intlName: "AMATA TOWNSHIP LONG THANH COMPANY LIMITED",
     shortName: "ATLT",
