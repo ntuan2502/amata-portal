@@ -15,7 +15,7 @@ export const ACBH: CompanyInfo = {
     logo: "/images/logo/acbh.png",
     taxCode: "3600265395",
     taxAddress: {
-        vi: "KCN Long Bình (Amata), Phường Long Bình, TP Đồng Nai, Việt Nam",
+        vi: "Khu Công Nghiệp Long Bình (Amata), Phường Long Bình, Thành phố Đồng Nai, Việt Nam",
         en: "Long Binh Industrial Park (Amata), Long Binh Ward, Dong Nai City, Vietnam"
     },
     intlName: "AMATA CITY BIENHOA JOINT STOCK COMPANY",
@@ -27,8 +27,8 @@ export const ACLT: CompanyInfo = {
     logo: "/images/logo/aclt.png",
     taxCode: "3603295006",
     taxAddress: {
-        vi: "Khu Công Nghiệp Công Nghệ Cao Long Thành, Xã Long Thành, TP Đồng Nai, Việt Nam",
-        en: "Long Thanh High-Tech Industrial Park, Long Thanh Commune, Dong Nai City, Vietnam"
+        vi: "Khu Công Nghiệp Công Nghệ Cao Long Thành, Phường Long Thành, Thành phố Đồng Nai, Việt Nam",
+        en: "Long Thanh High-Tech Industrial Park, Long Thanh Ward, Dong Nai City, Vietnam"
     },
     intlName: "AMATA CITY LONGTHANH JOINT STOCK COMPANY",
     shortName: "ACLT",
@@ -39,7 +39,7 @@ export const ACHL: CompanyInfo = {
     logo: "/images/logo/achl.png",
     taxCode: "5701929293",
     taxAddress: {
-        vi: "Khu Công nghiệp Sông Khoai, Phường Hiệp Hòa, Tỉnh Quảng Ninh, Việt Nam",
+        vi: "Khu Công Nghiệp Sông Khoai, Phường Hiệp Hòa, Tỉnh Quảng Ninh, Việt Nam",
         en: "Song Khoai Industrial Park, Hiep Hoa Ward, Quang Ninh Province, Vietnam"
     },
     intlName: "AMATA CITY HA LONG JOINT STOCK COMPANY",
@@ -51,7 +51,7 @@ export const ATLT: CompanyInfo = {
     logo: "/images/logo/atlt.png",
     taxCode: "3603404368",
     taxAddress: {
-        vi: "Trung tâm dịch vụ Amata, Khu thương mại Amata, Phường Long Bình, TP Đồng Nai, Việt Nam",
+        vi: "Trung tâm dịch vụ Amata, Khu thương mại Amata, Phường Long Bình, Thành phố Đồng Nai, Việt Nam",
         en: "Amata Service Center, Amata Commercial Complex, Long Binh Ward, Dong Nai City, Vietnam"
     },
     intlName: "AMATA TOWNSHIP LONG THANH COMPANY LIMITED",
@@ -63,7 +63,7 @@ export const ACPT: CompanyInfo = {
     logo: "/images/logo/acpt.png",
     taxCode: "2601144546",
     taxAddress: {
-        vi: "Khu Công nghiệp Đoan Hùng, Xã Đoan Hùng, Tỉnh Phú Thọ, Việt Nam",
+        vi: "Khu Công Nghiệp Đoan Hùng, Xã Đoan Hùng, Tỉnh Phú Thọ, Việt Nam",
         en: "Doan Hung Industrial Park, Doan Hung Commune, Phu Tho Province, Vietnam"
     },
     intlName: "AMATA CITY PHU THO JOINT STOCK COMPANY",
