@@ -46,17 +46,17 @@ export const ACHL: CompanyInfo = {
     shortName: "ACHL",
 };
 
-export const ATLT: CompanyInfo = {
-    fullName: "CÔNG TY TNHH THÀNH PHỐ AMATA LONG THÀNH",
-    logo: "/images/logo/atlt.png",
-    taxCode: "3603404368",
-    taxAddress: {
-        vi: "Trung tâm dịch vụ Amata, Khu thương mại Amata, Phường Long Bình, Thành phố Đồng Nai, Việt Nam",
-        en: "Amata Service Center, Amata Commercial Complex, Long Binh Ward, Dong Nai City, Vietnam"
-    },
-    intlName: "AMATA TOWNSHIP LONG THANH COMPANY LIMITED",
-    shortName: "ATLT",
-};
+// export const ATLT: CompanyInfo = {
+//     fullName: "CÔNG TY TNHH THÀNH PHỐ AMATA LONG THÀNH",
+//     logo: "/images/logo/atlt.png",
+//     taxCode: "3603404368",
+//     taxAddress: {
+//         vi: "Trung tâm dịch vụ Amata, Khu thương mại Amata, Phường Long Bình, Thành phố Đồng Nai, Việt Nam",
+//         en: "Amata Service Center, Amata Commercial Complex, Long Binh Ward, Dong Nai City, Vietnam"
+//     },
+//     intlName: "AMATA TOWNSHIP LONG THANH COMPANY LIMITED",
+//     shortName: "ATLT",
+// };
 
 export const ACPT: CompanyInfo = {
     fullName: "CÔNG TY CỔ PHẦN ĐÔ THỊ AMATA PHÚ THỌ",
@@ -70,4 +70,4 @@ export const ACPT: CompanyInfo = {
     shortName: "ACPT",
 };
 
-export const COMPANIES = { ACBH, ACLT, ACHL, ATLT, ACPT };
+export const COMPANIES = { ACBH, ACLT, ACHL, ACPT };
