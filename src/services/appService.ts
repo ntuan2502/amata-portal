@@ -51,7 +51,7 @@ export const MOCK_APPS: AppEntity[] = [
         iconUrl: 'Users',
         thumbnailUrl: '/images/application/hris.jpg',
         // thumbnailUrl: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.1.0&q=80&w=800&auto=format&fit=crop',
-        url: 'https://portalvn.amata.com:9669/New_Login/New_Index',
+        url: 'https://portalvn.amata.com/New_Login/New_Index',
         category: 'HR'
     },
     {
