@@ -39,8 +39,8 @@ export const ACHL: CompanyInfo = {
     logo: "/images/logo/achl.png",
     taxCode: "5701929293",
     taxAddress: {
-        vi: "Khu Công Nghiệp Sông Khoai, Phường Hiệp Hòa, Tỉnh Quảng Ninh, Việt Nam",
-        en: "Song Khoai Industrial Park, Hiep Hoa Ward, Quang Ninh Province, Vietnam"
+        vi: "Khu Công Nghiệp Sông Khoai, Phường Hiệp Hòa, Thành phố Quảng Ninh, Việt Nam",
+        en: "Song Khoai Industrial Park, Hiep Hoa Ward, Quang Ninh City, Vietnam"
     },
     intlName: "AMATA CITY HA LONG JOINT STOCK COMPANY",
     shortName: "ACHL",
