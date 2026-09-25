@@ -66,7 +66,6 @@ export const MOCK_APPS: AppEntity[] = [
         // thumbnailUrl: "https://images.unsplash.com/photo-1554224155-1696413565d3?ixlib=rb-4.1.0&q=80&w=800&auto=format&fit=crop",
         url: "https://apps.powerapps.com/play/e/default-06d2bc4d-7325-430e-808f-ecfe9126a217/a/d9b33c03-7dd3-45a6-bcff-f4d0a0330827?tenantId=06d2bc4d-7325-430e-808f-ecfe9126a217&hint=9c131a6c-c918-4228-a899-d3e5c2b8c3a2&sourcetime=1768270333124&hidenavbar=true",
         category: "IT Services",
-        isNew: true
     },
     {
         id: 'it-ticket',
@@ -82,6 +81,32 @@ export const MOCK_APPS: AppEntity[] = [
         category: 'IT Services'
     },
     {
+        id: 'online-approval',
+        name: 'Online Approval',
+        description: {
+            vi: 'Hệ thống phê duyệt văn bản và quy trình trực tuyến.',
+            en: 'Online document approval and process management system.'
+        },
+        iconUrl: 'FileCheck',
+        thumbnailUrl: '/images/application/online-approval.jpg',
+        // thumbnailUrl: 'https://images.unsplash.com/photo-1763729805496-b5dbf7f00c79?ixlib=rb-4.1.0&q=80&w=800&auto=format&fit=crop',
+        url: 'https://mis.amata.com/online_approval/',
+        category: 'IT Services',
+    },
+    {
+        id: 'business-trip-approval',
+        name: 'Business Trip Approval',
+        description: {
+            vi: 'Hệ thống đề xuất và phê duyệt công tác trực tuyến.',
+            en: 'Online business trip request and approval workflow system.'
+        },
+        iconUrl: 'PlaneTakeoff',
+        thumbnailUrl: '/images/application/business-trip-approval.jpg',
+        url: 'https://apps.powerapps.com/play/e/default-06d2bc4d-7325-430e-808f-ecfe9126a217/a/f3fc0fd7-771b-4817-ba11-df607ec4a784?tenantId=06d2bc4d-7325-430e-808f-ecfe9126a217&hint=716d5c92-848d-4b16-98a2-35e04d016743&sourcetime=1790324751094&hidenavbar=true',
+        category: 'IT Services',
+        isNew: true,
+    },
+    {
         id: 'office-365',
         name: 'Office 365',
         description: {
@@ -94,19 +119,6 @@ export const MOCK_APPS: AppEntity[] = [
         url: 'https://portal.office.com/',
         category: 'IT Services'
     },
-    {
-        id: 'online-approval',
-        name: 'Online Approval',
-        description: {
-            vi: 'Hệ thống phê duyệt văn bản và quy trình trực tuyến.',
-            en: 'Online document approval and process management system.'
-        },
-        iconUrl: 'FileCheck',
-        thumbnailUrl: '/images/application/online-approval.jpg',
-        // thumbnailUrl: 'https://images.unsplash.com/photo-1763729805496-b5dbf7f00c79?ixlib=rb-4.1.0&q=80&w=800&auto=format&fit=crop',
-        url: 'https://mis.amata.com/online_approval/',
-        category: 'IT Services',
-    }
 ];
 
 // Giả lập lấy dữ liệu bất đồng bộ
